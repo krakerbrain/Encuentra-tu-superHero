@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Heroe</title>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+    <!-- CDN JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/png" />
+    <!-- BOOSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav id="nav" class="navbar navbar-light bg-warning">
+      <a class="navbar-brand text-danger font-weight-bold" href="#">
+        <img src="assets/img/sh2.jpg " width="40" height="30" class="d-inline-block align-top pr-2" />
+        SuperHero
+      </a>
+    </nav>
+    <!-- HEADER CON IMAGEN PRINCIPAL -->
+    <header class="container text-center py-4">
+      <img src="assets/img/sh1.jpg" />
+    </header>
+
+    <!-- TITULO E INSTRUCCION DE BUSQUEDA -->
+    <section>
+      <div class="container text-warning">
+        <h1>Encuentra tu Super Héroe</h1>
+        <p>Escribe el número del SuperHero a buscar</p>
+        <form>
+          <input id="heroInput" class="col-12" type="number" required />
+          <button id="enviar" class="bg-warning text-danger my-3">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION DONDE SE MUESTRA LA FICHA DEL HEROE Y EL CHART -->
+    <section id="estados">
+      <div class="card mb-3">
+        <div class="col-12" id="heroInfo"></div>
+      </div>
+    </section>
+
+    <footer class="bg-warning text-center py-2 mt-3">
+      <img src="assets/img/sh2.jpg" width="40" height="30" />
+      <a class="footer text-danger px-2" href="#nav">SuperHero</a>
+      <p>Desafío final Módulo 2 - Encuentra tu Super Héroe</p>
+      <p>Mario Montenegro</p>
+    </footer>
+
+    <!-- CDN CANVAS Y CODIGO PERSONAL -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assets\js\codigo.js"></script>
+  </body>
+</html>
